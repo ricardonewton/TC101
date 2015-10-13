@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int sum (int x, int y ){
+  int sum=x+y;
+
+return sum;
+}
+int dif (int x, int y ){
+  int dif=x-y;
+
+return dif;
+}
+int prod (int x, int y ){
+  int prod=x*y;
+
+return prod;
+}
+int di (int x, int y ){
+  int di=x/y;
+
+return di;
+}
+int rem (int x, int y ){
+  int rem=x%y;
+
+return rem;
+}
+
+int main (){
+  int x, y;
+cout<<"Type the first number"<<endl;
+cin>>x;
+cout<<"Type the second number"<<endl;
+cin>>y;
+
+cout<< x <<" + " <<y <<" = "<< sum(x,y)<<endl;
+cout<< x <<" - " <<y<< " = " <<dif(x,y)<<endl;
+cout<< x <<" x " <<y <<" = "<< prod(x,y)<<endl;
+cout<< x<<" / " <<y <<" = "<<di (x,y)<<endl;
+cout<< " The remedial of "<< x<< " / " <<y <<" is " <<rem(x,y) <<endl;
+return 0;
+}
