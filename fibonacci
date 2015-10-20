@@ -1,42 +1,37 @@
 #include <iostream>
 using namespace std;
 
+long fibonacci (long numb)
+{
+long ct,a,x,y;
+x=0;
+y=1;
+if (numb==1) ct=y;
 
-  int fibonacci(int x)
-  {
-    int f;
-    if (x==1){
-      f=1;
+if (numb==0) ct=x;
+
+if (numb>=2) {
+for (a=0;  a<=numb-2;  a++)
+
+{
+ct=x+y;
+x=y;
+y=ct;
 }
-    else if (x==0){
-      f=0;
-    }
 
-      else  {
-      int a=1;
-      int b=0;
-      f = 1;
-      int g;
-
-      while (a<b){
-        g = f;
-        f= f+b;
-        b= g;
-        a++;
-      }
-    }
-
-  return f;
-  }
+return ct;
+}
+return 0;}
 
 
 
-  int main()
-  {
-   cout<<"Type number to do the Fibonacci function"<<endl;
-   int k;
-   cin>>k;
-   int d = fibonacci(k);
-   cout<<d<<endl;
-   return 0;
-  }
+int main (){
+long number,answer;
+
+  cin >> number;
+
+answer=fibonacci (number);
+cout <<answer<< endl;
+return 0;
+}
+
