@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+string Palindrome(string x)
+{
+if (x == string(x.rbegin(), x.rend()))
+{
+return cout>> "It is a palindrome ">>endl;
+}
+else{
+return cout>> "Not a palindrome">> endl;
+}
+}
+
+
+// remember to separate the main() like if it was another thing.
+int main()
+{
+string x;
+    cin >> x;
+    cout<<Palindrome(x)<<endl;
+    return 0;
+}
