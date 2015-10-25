@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int sums(int ar[10]) {
+  int sum=0;
+  for (int i=0; i<10; i++){
+    sum =sum+ (ar[i]);
+  }
+  return sum;
+}
+
+
+
+int main() {
+
+int ar[10];
+cout<<"Type 10 numbers using enter"<<endl;
+cin>>ar[0];
+cin>>ar[1];
+cin>>ar[2];
+cin>>ar[3];
+cin>>ar[4];
+cin>>ar[5];
+cin>>ar[6];
+cin>>ar[7];
+cin>>ar[8];
+cin>>ar[9];
+
+cout<< "The total is " << sums(ar)<<endl;
+int av;
+ av= (sums(ar))/10;
+cout<<"The average is "<<av<<endl;
+
+int a,b,c,d,e,f,g,h,i,j;
+a=((ar[0]-av)*(ar[0]-av));
+b=((ar[1]-av)*(ar[1]-av));
+c=((ar[2]-av)*(ar[2]-av));
+d=((ar[3]-av)*(ar[3]-av));
+e=((ar[4]-av)*(ar[4]-av));
+f=((ar[5]-av)*(ar[5]-av));
+g=((ar[6]-av)*(ar[6]-av));
+h=((ar[7]-av)*(ar[7]-av));
+i=((ar[8]-av)*(ar[8]-av));
+j=((ar[9]-av)*(ar[9]-av));
+
+int k;
+k=((a+b+c+d+e+f+g+h+i+j)/10);
+
+cout <<"The standard deviation is "<< k<<endl;
+return 0;
+}
