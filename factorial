@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int number;
+cout << "Enter number ";
+cin >> number;
+
+int fact,a;
+
+	for (a = 0; a <= number; a++){
+
+		if (a == 0)
+		fact= 1;
+		else
+		fact = fact * a;
+}
+
+	cout << fact << endl;
+return 0;
+}
