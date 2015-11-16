@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int divisor( int a, int b )
+{
+   if( a < b )
+      return divisor( b, a );
+
+   int f = a % b;
+   if( f == 0 )
+     return b;
+   else
+      return divisor( b, f );
+}
+
+int main(){
+  int a;
+  int b;
+  cout<<"enter first number"<<endl;
+  cin>>a;
+  cout<<"enter second number"<<endl;
+  cin>>b;
+
+  cout<<divisor(a,b)<<endl;
+}
