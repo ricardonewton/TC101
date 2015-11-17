@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+double babylonian(double  number){
+  ;
+  double sideone;
+  int os=number/2;
+
+for ( int i=0 ;i<50 ; i++) {
+
+os=((os+(number/os))*.5);
+}
+
+return os;
+}
+
+int main(){
+double number;
+
+cout<<"Enter value"<<endl;
+cin>>number;
+
+cout<<babylonian(number)<<endl;
+return 0;
+}
