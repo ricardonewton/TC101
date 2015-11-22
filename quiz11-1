@@ -1,22 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <iostream>
+using namespace std;
 
-int main()
-{
+float calculate_e(){
+  float euler = 1, k;
+  int input;
 
-float euler = 1, k;
-int input;
+  cout<<"Enter value "<<endl;
+  scanf("%d", &input);
 
-printf("Enter value ");
-scanf("%d", &input);
-
-for (k = 1; k <= input; k++)
-{
-euler = euler + 1.0/tgamma(k+1);
-}
-printf("euler number is %f\n", euler);
-
+  for (k = 1; k <= input; k++)
+  {
+  euler = euler + 1.0/tgamma(k+1);
+  }
+  printf("euler number is %f\n", euler);
 return 0;
 }
 
+
+
+int main()
+{
+cout<<calculate_e()<<endl;
+
+return 0;
+}
